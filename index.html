@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taewhan Kim</title>
+  <meta name="description" content="Taewhan Kim — Robotics & AI researcher at Neuromeka. Robot manipulation, affordance learning, and learning-augmented industrial automation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+
+    <!-- ============ Header / Bio ============ -->
+    <header class="hero">
+      <div class="hero-text">
+        <h1>Taewhan Kim <span class="kr">김태환</span></h1>
+        <p class="role">Research Engineer · <a href="https://www.neuromeka.com">Neuromeka</a></p>
+
+        <p>
+          I am a researcher at <a href="https://www.neuromeka.com">Neuromeka</a>, working with
+          <strong>Joonho Lee</strong> on learning-based robot manipulation for real-world manufacturing.
+        </p>
+        <p>
+          I received my M.S. in Computer Science from <a href="https://english.pku.edu.cn/">Peking University</a>,
+          advised by <a href="https://zsdonghao.github.io/">Prof. Hao Dong</a>, and my B.Eng. in
+          Electrical and Electronic Engineering from the
+          <a href="https://www.nottingham.edu.cn/en/">University of Nottingham Ningbo China</a>.
+        </p>
+        <p>
+          My research interests include <strong>articulated object manipulation</strong>,
+          <strong>visual affordance learning</strong>, <strong>vision foundation models for robotics</strong>,
+          and <strong>deploying robot learning in factories</strong>.
+        </p>
+
+        <nav class="links">
+          <a href="mailto:taewhan.kim@neuromeka.com">Email</a>
+          <a href="cv.pdf">CV</a>
+          <a href="https://scholar.google.com/">Google Scholar</a> <!-- TODO: your Scholar profile URL -->
+          <a href="https://github.com/">GitHub</a>                 <!-- TODO: your GitHub URL -->
+          <a href="https://www.linkedin.com/">LinkedIn</a>          <!-- TODO: your LinkedIn URL -->
+        </nav>
+      </div>
+      <div class="hero-photo">
+        <!-- Put your photo at images/profile.jpg -->
+        <img src="images/profile.jpg" alt="Taewhan Kim" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'photo-fallback',textContent:'TK'}))">
+      </div>
+    </header>
+
+    <!-- ============ News ============ -->
+    <section>
+      <h2>News</h2>
+      <ul class="news">
+        <li><span class="date">2026.04</span> Our paper on <em>learning-augmented robotic automation for manufacturing</em> is released on arXiv.</li>
+        <li><span class="date">2025.06</span> <em>ManipGPT</em> accepted to <strong>IROS 2025</strong>.</li>
+        <li><span class="date">2025.02</span> <em>CheckManual</em> accepted to <strong>CVPR 2025</strong>.</li>
+        <li><span class="date">20XX.XX</span> Joined <strong>Neuromeka</strong> as a research engineer.</li> <!-- TODO: date -->
+      </ul>
+    </section>
+
+    <!-- ============ Publications ============ -->
+    <section>
+      <h2>Publications</h2>
+      <p class="note">* equal contribution &nbsp;·&nbsp; † corresponding author</p>
+
+      <div class="pub">
+        <div class="thumb"><img src="images/soldering.jpg" alt="" onerror="this.parentNode.classList.add('empty')"></div>
+        <div class="pub-body">
+          <a class="title" href="https://arxiv.org/abs/2604.22235">Learning-Augmented Robotic Automation for Real-World Manufacturing</a>
+          <div class="authors"><span class="me">Taewhan Kim</span>, et al.</div> <!-- TODO: full author list -->
+          <div class="venue">arXiv, 2026</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2604.22235">arXiv</a>
+            <a href="https://ai.neuromeka.com/post.html?file=posts/soldering.md">Blog</a>
+            <a href="https://www.youtube.com/watch?v=3kKfg-nk8us">Video</a>
+          </div>
+          <p class="tldr">A production-grade bimanual cobot doing motor cable pick, insertion and soldering in a shared factory workspace. It reached 99.4% insertion reliability and assembled 108 motors over 5 hours.</p>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="thumb"><img src="images/manipgpt.jpg" alt="" onerror="this.parentNode.classList.add('empty')"></div>
+        <div class="pub-body">
+          <a class="title" href="https://lxkim814.github.io/ManipGPT_website/">ManipGPT: Is Affordance Segmentation by Large Vision Models Enough for Articulated Object Manipulation?</a>
+          <div class="authors"><span class="me">Taewhan Kim</span>, Hojin Bae, Zeming Li, Xiaoqi Li, Iaroslav Ponomarenko, Ruihai Wu, Hao Dong</div>
+          <div class="venue">IEEE/RSJ International Conference on Intelligent Robots and Systems (<strong>IROS</strong>), 2025</div>
+          <div class="pub-links">
+            <a href="https://lxkim814.github.io/ManipGPT_website/">Project Page</a>
+            <a href="https://arxiv.org/abs/2412.10050">arXiv</a>
+          </div>
+          <p class="tldr">Uses a large vision model to segment affordances so a robot knows where to interact with articulated objects, without complex datasets or perception pipelines.</p>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="thumb"><img src="images/checkmanual.jpg" alt="" onerror="this.parentNode.classList.add('empty')"></div>
+        <div class="pub-body">
+          <a class="title" href="https://sites.google.com/view/checkmanual">CheckManual: A New Challenge and Benchmark for Manual-based Appliance Manipulation</a>
+          <div class="authors">Yuxing Long, Jiyao Zhang, Mingjie Pan, Tianshu Wu, <span class="me">Taewhan Kim</span>, Hao Dong</div>
+          <div class="venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition (<strong>CVPR</strong>), 2025</div>
+          <div class="pub-links">
+            <a href="https://sites.google.com/view/checkmanual">Project Page</a>
+            <a href="https://drive.google.com/file/d/1ns5pQdb7486QM8VRi_VAiiiZAmXb1V_x/view">Paper</a>
+            <a href="https://github.com/LYX0501/CheckManual">Code</a>
+          </div>
+          <p class="tldr">A benchmark where robots must read an appliance's manual to operate it correctly.</p>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="thumb"><img src="images/rad.jpg" alt="" onerror="this.parentNode.classList.add('empty')"></div>
+        <div class="pub-body">
+          <a class="title" href="https://chang-xinhai.github.io/rad-website/">RAD: A Realistic Multi-View Benchmark for Pose-Agnostic Anomaly Detection</a>
+          <div class="authors">Kaichen Zhou, Xinhai Chang, <span class="me">Taewhan Kim</span>, Jiadong Zhang, Yang Cao, Chufei Peng, Fangneng Zhan, Hao Zhao, Hao Dong, Kai Ming Ting, Ye Zhu</div>
+          <div class="venue">arXiv, 2024</div>
+          <div class="pub-links">
+            <a href="https://chang-xinhai.github.io/rad-website/">Project Page</a>
+            <a href="https://arxiv.org/abs/2410.00713">arXiv</a>
+            <a href="https://github.com/kaichen-z/RAD">Code</a>
+          </div>
+          <p class="tldr">A real-world multi-view dataset for detecting anomalies in objects seen from any pose.</p>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="thumb"><img src="images/partaware.jpg" alt="" onerror="this.parentNode.classList.add('empty')"></div>
+        <div class="pub-body">
+          <span class="title">Learning Part-Aware Visual Actionable Affordance for 3D Articulated Object Manipulation</span> <!-- TODO: wrap in <a href="..."> when you have a link -->
+          <div class="authors">Yuanchen Ju*, Haoran Geng*, Ming Yang*, Yiran Geng, Yaroslav Ponomarenko, <span class="me">Taewhan Kim</span>, He Wang, Hao Dong†</div>
+          <div class="venue">CVPR Workshop on 3D Vision and Robotics, 2023</div> <!-- TODO: verify venue -->
+          <div class="pub-links">
+            <!-- TODO: add Paper / Project links -->
+          </div>
+          <p class="tldr">Learns part-aware affordances that tell a robot which part of a 3D articulated object to act on.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Education & Experience ============ -->
+    <section>
+      <h2>Education &amp; Experience</h2>
+      <div class="cv">
+        <div class="cv-row">
+          <div class="cv-when">20XX – Present</div> <!-- TODO -->
+          <div><strong>Neuromeka</strong>, Seoul, Korea<br><span class="muted">Research Engineer · Advisor: Joonho Lee</span></div>
+        </div>
+        <div class="cv-row">
+          <div class="cv-when">20XX – 20XX</div> <!-- TODO -->
+          <div><strong>Peking University</strong>, Beijing, China<br><span class="muted">M.S. in Computer Science · Advisor: Prof. Hao Dong</span></div>
+        </div>
+        <div class="cv-row">
+          <div class="cv-when">20XX – 20XX</div> <!-- TODO -->
+          <div><strong>University of Nottingham Ningbo China</strong>, Ningbo, China<br><span class="muted">B.Eng. in Electrical and Electronic Engineering</span></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Taewhan Kim · Last updated Sep 2026
+    </footer>
+  </main>
+</body>
+</html>
