@@ -85,7 +85,8 @@ a.title:hover { color: var(--accent); text-decoration: none; }
 .tldr { font-size: 0.9rem; color: var(--muted); margin: 4px 0 0; }
 
 /* CV */
-.cv-row { display: flex; gap: 24px; padding: 8px 0; }
+.cv-row { display: flex; gap: 20px; padding: 10px 0; align-items: center; }
+.cv-logo { width: 48px; height: 48px; object-fit: contain; flex-shrink: 0; }
 .cv-when { width: 130px; flex-shrink: 0; color: var(--muted); font-variant-numeric: tabular-nums; }
 
 footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.82rem; text-align: center; }
@@ -97,7 +98,8 @@ footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line);
   .hero-photo img, .photo-fallback { width: 140px; height: 140px; }
   .pub { flex-direction: column; gap: 12px; }
   .thumb { width: 100%; }
-  .cv-row { flex-direction: column; gap: 0; }
+  .cv-row { flex-wrap: wrap; gap: 4px 14px; }
+  .cv-when { width: 100%; }
   .news li { padding-left: 0; text-indent: 0; }
   .news .date { display: block; }
 }
