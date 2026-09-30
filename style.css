@@ -58,8 +58,8 @@ h2 {
 
 /* News */
 .news { list-style: none; padding: 0; margin: 0; }
-.news li { display: flex; gap: 16px; padding: 4px 0; }
-.news .date { color: var(--muted); font-variant-numeric: tabular-nums; flex-shrink: 0; width: 64px; }
+.news li { padding: 4px 0 4px 80px; text-indent: -80px; }
+.news .date { display: inline-block; width: 80px; text-indent: 0; color: var(--muted); font-variant-numeric: tabular-nums; }
 
 /* Publications */
 .pub { display: flex; gap: 24px; padding: 18px 0; border-bottom: 1px solid var(--line); }
@@ -98,7 +98,8 @@ footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line);
   .pub { flex-direction: column; gap: 12px; }
   .thumb { width: 100%; }
   .cv-row { flex-direction: column; gap: 0; }
-  .news li { flex-direction: column; gap: 0; }
+  .news li { padding-left: 0; text-indent: 0; }
+  .news .date { display: block; }
 }
 
 /* Service */
